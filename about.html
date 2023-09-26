@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo2.jpg" class="logo" alt="" height="60px" width="150px">
+                <ul id="sidemenu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">subscription</a></li>
+                    <li><a href="">breads</a></li>
+                    <li><a href="">story</a></li>
+                    <li><a href="">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" style="color:#37717D;" onclick="openmenu()"></i>
+            </nav>
+           
+        </div>
+    </div>
+
+    <!-- second base  -->
+    <div id="second">   
+        <div class="header_two">
+            <h2>wanna know your dog's need?</h2>
+            <p>learn the basic needs of your dog</p>
+        </div>
+
+
+        <img src="./images/pointing-dog.jpg" id="dog2" alt="" height="auto" width="80%">
+
+        <div class="card">
+            <h3>learn what your <br> dog need</h3>
+            <p>There are many needs of dog but some of them are very essential and every dog owner should now them.</p>
+        </div>
+        <div class="card_2">
+            <a href=""><i class="fa-solid fa-syringe"></i></a>
+            <p>Vaccination of your dog is very important as it also effect people around as well. Vaccinated dog is health and safe dog for others .</p>
+        </div>
+        <div class="card_3">
+            <a href=""><i class="fa-solid fa-bowl-food"></i></a>
+            <p>Know what your dog eats can be tricky.Yet most owner learn there dog taste after some trial and error.So try some different dishes. </p>
+        </div>
+        <div class="card_4">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+            <p>Providing your dog with enough love can really change dog behaviour. So by caring and providing you can realy bond with your dog.</p>
+        </div>
+    </div>
+
+            <!-- footer -->
+
+
+            <div id="footer">
+                <div class="copyright">
+                    <p style="color:white;"> Copyright © Varun - 2023 Yours <i class="fa-solid fa-heart" style="color: white;"></i> All Rights Reserved.</p>
+                </div>
+
+
+            <script>
+
+             var sidemeu = document.getElementById("sidemenu");
+              
+             function openmenu(){
+                sidemeu.style.right = "0";
+
+             }
+             function closemenu(){
+                sidemeu.style.right = "-200px";
+
+             }
+
+            </script>
+</body>
+
+</html>
