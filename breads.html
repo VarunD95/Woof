@@ -1,0 +1,366 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+nav img{
+    cursor: pointer;
+}
+
+
+
+#header {
+    width: 100%;
+   
+    
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.container {
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    text-transform: capitalize;
+    color: #37717D;
+   
+}
+
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #37717D;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+nav .fas{
+    display: none;
+}
+/* fourth */
+/* fourth */
+#fourth {
+    padding: 20px 0;
+    width: 100%;
+}
+
+#fourth h1 {
+    font-size: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    padding: 20px;
+    color: #37717D;
+  
+
+}
+
+.dogbreads {
+
+   
+    width: 90%;
+    margin: auto;
+    display: flex;
+   
+    flex-wrap: wrap;
+   
+    
+
+}
+
+
+.gallary img {
+    height: auto;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.gallary {
+    flex: 300px;
+    position: relative;
+    margin: 10px;
+   
+
+}
+
+.layer {
+    width: 100% ;
+    height: 0;
+    background-color:#37717da2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+     text-align: center;
+}
+
+.gallary:hover .layer {
+    height: 200px;
+}
+
+
+.gallary h4 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+}
+
+.gallary p {
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+
+}
+
+
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.copyright i {
+    color: #00c3ff;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #37717D;
+    font-weight: 300;
+    margin-top: 30px;
+}
+@media screen and (max-width: 540px) {
+   
+   /* navbar */
+   nav .fas{
+       display: block;
+       font-size: 25px;
+       color: white;
+   }
+
+   nav ul{
+       background-color: #37717D;
+       position: fixed;
+       top: 0;
+       right:-200px;
+       width: 200px;
+       height:100vh;
+       padding-top: 50px;
+       z-index: 2;
+       transition:  0.5s;
+       padding-top: 50px;
+   }
+
+   nav ul li{
+       display: block;
+       padding: 5px 10px;
+       
+   }
+   nav ul .fas{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      color: white;
+   }
+   nav ul li a{
+       color: white;
+   }
+   nav ul li a::after{
+       color: white;
+   }
+    /* fourth */
+
+    #fourth h1 {
+    font-size: 25px;
+    }
+    
+  
+
+    }
+</style>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo2.jpg" class="logo" alt="" height="60px" width="150px">
+                <ul id="sidemenu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="subscription.html">subscription</a></li>
+                    <li><a href="breads.html">breads</a></li>
+                    <li><a href="story.html">story</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" style="color:#37717D;" onclick="openmenu()"></i>
+            </nav>
+           
+        </div>
+    </div>
+
+     <!-- fourth -->
+
+     <div id="fourth">
+        <h1>CHOOSE WHAT RIGHT <br> FOR YOU</h1>
+        <div class="dogbreads">
+            <div class="gallary">
+                <img src="./images/G-1.webp" alt="">
+                <div class="layer">
+                    <h4>Labrador</h4>
+                    <p>The Labrador Retriever, or simply Labrador, is a British breed of retriever gun dog. It was developed in the United Kingdom from fishing dogs imported from the colony of Newfoundland</p>
+                    <a href="" >For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-2.jpg" alt="">
+                <div class="layer">
+                    <h4>Golden Retriver</h4>
+                    <p>The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat. </p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-3.jpg" alt="">
+                <div class="layer">
+                    <h4>Germen shepherd</h4>
+                    <p>The German Shepherd[a], also known in Britain as an Alsatian, is a German breed of working dog of medium to large size. The breed was developed by Max von Stephanitz.</p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-4.jpg" alt="">
+                <div class="layer">
+                    <h4>Husky</h4>
+                    <p>Husky is a general term for a dog used in the polar regions, primarily and specifically for work as sled dogs. It refers to a traditional northern type, notable for its cold-weather tolerance.</p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-5.jpg" alt="">
+                <div class="layer">
+                    <h4>French Bulldog</h4>
+                    <p>The French Bulldog, French: Bouledogue Français, is a French breed of companion dog or toy dog. It appeared in Paris in the mid-nineteenth century, apparently the result of cross-breeding </p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-6.jpg" alt="">
+                <div class="layer">
+                    <h4>Dalmatian</h4>
+                    <p>The Dalmatian is a breed of dog,[2] which has a white coat marked with black or brown-coloured spots. Originating as a hunting dog, it was also used as a carriage dog in its early days. .</p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-9.jpg" alt="">
+                <div class="layer">
+                    <h4>Welsh Corgi</h4>
+                    <p>The Welsh Corgi plural Corgwn is a small type of herding dog that originated in Wales. The name corgi is derived from the Welsh words cor and ci</p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-8.jpg" alt="">
+                <div class="layer">
+                    <h4>Chihuahua</h4>
+                    <p>The Chihuahua(or Spanish: Chihuahueño) is a Mexican breed of toy dog. It is named for the Mexican state of Chihuahua and is among the smallest of all dog breeds</p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+            <div class="gallary">
+                <img src="./images/G-10.jpg" alt="">
+                <div class="layer">
+                    <h4>Pitbull</h4>
+                    <p>Pit bull is a term used in the United States for a type of dog believed to have descended from bull and terriers, while in other countries such as the United Kingdom.</p>
+                    <a href="">For More Info.</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+            <!-- footer -->
+
+
+            <div id="footer">
+                <div class="copyright">
+                    <p style="color:white;"> Copyright © Varun - 2023 Yours <i class="fa-solid fa-heart" style="color: white;"></i> All Rights Reserved.</p>
+                </div>
+
+
+            <script>
+
+             var sidemeu = document.getElementById("sidemenu");
+              
+             function openmenu(){
+                sidemeu.style.right = "0";
+
+             }
+             function closemenu(){
+                sidemeu.style.right = "-200px";
+
+             }
+
+            </script>
+</body>
+
+</html>
